@@ -1,0 +1,39 @@
+servicelist:
+  "register":
+      agent: blue   #短信通道供应商
+      smstpl: 欢迎使用xxx，您此次操作的手机验证码是%s，180s内有效，注意保密哟！      #短信模板id
+      signname: 短信签名    #短信签名
+      callback: "http://xxx.com/insert.php"
+      maxsendnums: 5   #一个手机号每天发送限额
+      validtime: 600  #单位：秒 。 收到的手机验证码x秒内有效，超过后验证无效；
+
+  "restpwd":
+      agent: blue   #短信通道供应商
+      smstpl: 欢迎使用xxx，您此次操作的手机验证码是%s，180s内有效，注意保密哟！      #短信模板id
+      signname: 短信签名    #短信签名
+      callback: "http://xxx.com/insert.php"
+      maxsendnums: 5   #一个手机号每天发送限额
+      validtime: 600  #单位：秒 。 收到的手机验证码x秒内有效，超过后验证无效；
+
+  "getpwd":
+      agent: blue   #短信通道供应商
+      smstpl: 3010      #短信模板id
+      signname: 短信签名    #短信签名
+      callback: "http://xxx.com/insert.php"
+      maxsendnums: 5   #一个手机号每天发送限额
+      validtime: 600  #单位：秒 。 收到的手机验证码x秒内有效，超过后验证无效；
+
+errormsg:
+
+redisconf:
+  "host": 127.0.0.1
+  "port": 6379
+  "password": ""
+  "db": 8
+
+mysqlconf:
+  "user": root
+  "password": 11111111
+  "host": 127.0.0.1
+  "port": 3306
+  "name": sms  #短信数据存放单独数据库
