@@ -63,7 +63,7 @@ func (sms *SMS) send() error {
 
 	err := s.Send(sms)
 	if err != nil {
-		//return err
+		return err
 	}
 
 	// 如果是发送验证码 需要保存

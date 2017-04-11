@@ -37,3 +37,7 @@ mysqlconf:
   "host": 127.0.0.1
   "port": 3306
   "name": sms  #短信数据存放单独数据库
+
+blueconf:
+  "account": xxx
+  "password": yyy

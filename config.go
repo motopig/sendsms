@@ -11,6 +11,8 @@ type Config struct {
 	Errormsg    map[string]string         `yaml:"errormsg"`
 	RedisConf   map[string]string         `yaml:"redisconf"`
 	MysqlConf   map[string]string         `yaml:"mysqlconf"`
+	BlueConf    map[string]string         `yaml:"blueconf"`
+	DayuConf    map[string]string         `yaml:"dayuconf"`
 }
 
 type ServiceConfig struct {
